@@ -1,3 +1,9 @@
+import json
+
+# 載入 FDA 資料
+with open("fda_drug_info_sample.json", "r", encoding="utf-8") as f:
+    fda_data = json.load(f)
+
 import streamlit as st
 
 # 定義藥品資料庫
